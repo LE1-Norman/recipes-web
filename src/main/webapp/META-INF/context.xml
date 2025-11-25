@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context>
+    <WatchedResource>WEB-INF/web.xml</WatchedResource>
+    
+    <!-- Загружаем пользователей из файла внутри WAR -->
+    <Realm className="org.apache.catalina.realm.MemoryRealm"
+           pathname="D:/Eclipse-projects/recipes-web/src/main/webapp/WEB-INF/tomcat-users.xml"/>
+</Context>

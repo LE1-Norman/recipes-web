@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Русская кухня - Главная</title>
+    <style>
+        .container { max-width: 800px; margin: 0 auto; padding: 20px; }
+        .form-types { display: flex; gap: 20px; margin: 30px 0; flex-wrap: wrap; }
+        .form-type { flex: 1; min-width: 200px; padding: 20px; border: 2px solid #ddd; border-radius: 8px; text-align: center; }
+        .form-type.get { border-color: #4CAF50; background-color: #f1f8e9; }
+        .form-type.post { border-color: #2196F3; background-color: #e3f2fd; }
+        .form-type.complex { border-color: #FF9800; background-color: #fff3e0; }
+        .form-type.async { border-color: #9C27B0; background-color: #f3e5f5; }
+        .btn { display: inline-block; padding: 10px 20px; margin: 10px 5px; background-color: #007bff; color: white; text-decoration: none; border-radius: 5px; font-weight: bold; transition: transform 0.2s; }
+        .btn:hover { transform: translateY(-2px); }
+        .btn.get { background-color: #4CAF50; }
+        .btn.post { background-color: #2196F3; }
+        .btn.complex { background-color: #FF9800; }
+        .btn.async { background-color: #9C27B0; }
+        .feature-header { text-align: center; margin: 40px 0 20px 0; color: #333; }
+        .feature-description { text-align: center; margin-bottom: 30px; color: #666; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🍲 Добро пожаловать на сайт русской кухни!</h1>
+        <p>Исследуйте мир традиционных русских рецептов с помощью различных типов форм.</p>
+        
+        <!-- НОВЫЕ ФУНКЦИИ -->
+        <h2 class="feature-header">🚀 Новые функции</h2>
+        <p class="feature-description">Современный поиск с мгновенными результатами</p>
+        
+        <div class="form-types">
+            <div class="form-type async">
+                <h3>⚡ Умный поиск</h3>
+                <p>Мгновенный поиск с автодополнением</p>
+                <a href="forms/async-search.jsp" class="btn async">🔍 Найти рецепты</a>
+            </div>
+        </div>
+
+        <!-- СУЩЕСТВУЮЩИЙ ФУНКЦИОНАЛ -->
+        <h2 class="feature-header">📋 Основные функции</h2>
+        
+        <div class="form-types">
+            <div class="form-type get">
+                <h3>🔍 Простой поиск</h3>
+                <p>Классический поиск через GET-запросы</p>
+                <a href="forms/simple-search.jsp" class="btn get">Поиск...</a>
+            </div>
+            
+            <div class="form-type post">
+                <h3>🎛️ Отзыв</h3>
+                <p>Оцените наш сайт</p>
+                <a href="forms/rating-form.jsp" class="btn post">Оцените сайт</a>
+            </div>
+            
+            <div class="form-type complex">
+                <h3>➕ Добавление рецепта</h3>
+                <p>Добавьте свой рецепт в коллекцию</p>
+                <a href="forms/add-recipe.jsp" class="btn complex">Добавить...</a>
+            </div>
+        </div>
+        
+        <h3>🔗 Быстрые ссылки на существующий функционал:</h3>
+        <ul>
+            <li><a href="RecipesList?name=Шеф">Все рецепты</a></li>
+            <li><a href="RecipesList?name=Иванов И.И.&author=Иванов И.И.">Рецепты Иванова И.И.</a></li>
+            <li><a href="RecipesList?name=Петрова А.С.&author=Петрова А.С.">Рецепты Петровой А.С.</a></li>
+        </ul>
+    </div>
+</body>
+</html>
